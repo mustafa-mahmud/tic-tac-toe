@@ -1,0 +1,97 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	background-color: #232327;
+	color: #fff;
+	display: flex;
+	min-width: 100vw;
+	min-height: 100vh;
+	align-items: center;
+	justify-content: center;
+}
+
+.container {
+	width: 30rem;
+	height: 60rem;
+
+	.player {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		.name {
+			font-size: 2rem;
+			font-family: 'Shadows Into Light',
+				cursive;
+		}
+	}
+
+	.left-game {
+		font-size: 2rem;
+		text-align: center;
+		margin: 2rem 0;
+		font-family: 'Shadows Into Light',
+			cursive;
+	}
+
+	.tic-tak-toe-container {
+		width: 100%;
+		height: 40rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		.tic-tak-toe {
+			background-color: #232327;
+
+			ul {
+				list-style: none;
+				display: flex;
+				flex-direction: column;
+				width: 30rem;
+				height: 40rem;
+
+				li {
+					display: flex;
+					flex: 1;
+					height: 100%;
+
+					span {
+						background-color: #000;
+						display: inline-block;
+						flex: 1;
+						font-size: 8rem;
+						font-weight: bold;
+						text-align: center;
+						cursor: pointer;
+
+						font-family: 'Shadows Into Light',
+							cursive;
+					}
+
+					.border {
+						margin-left: 5px;
+						margin-right: 5px;
+					}
+				}
+
+				hr {
+					margin: 3px;
+					border: none;
+					background-color: transparent;
+				}
+
+			}
+		}
+	}
+}

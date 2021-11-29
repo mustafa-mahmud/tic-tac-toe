@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	background-color: #232327;
+	color: #fff;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	min-width: 100vw;
+	min-height: 100vh;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+}
+
+.container {
+	width: 30rem;
+	height: 60rem;
+}
+
+.container .player {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
+
+.container .player .name {
+	font-size: 2rem;
+	font-family: 'Shadows Into Light',
+		cursive;
+}
+
+.container .player .name span {
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background-color: transparent;
+	display: inline-block;
+}
+
+.container .player .name span.active {
+	background-color: red;
+}
+
+.container .left-game {
+	font-size: 2rem;
+	text-align: center;
+	margin: 2rem 0;
+	font-family: 'Shadows Into Light',
+		cursive;
+}
+
+.copyright {
+	text-align: center;
+	margin-top: 30px;
+	font-size: 15px;
+}
+
+.container .tic-tak-toe-container {
+	width: 100%;
+	height: 40rem;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
+
+.container .tic-tak-toe-container .tic-tak-toe {
+	background-color: #232327;
+}
+
+.container .tic-tak-toe-container .tic-tak-toe ul {
+	list-style: none;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	width: 30rem;
+	height: 40rem;
+}
+
+.container .tic-tak-toe-container .tic-tak-toe ul li {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+	height: 100%;
+}
+
+.container .tic-tak-toe-container .tic-tak-toe ul li span {
+	background-color: #000;
+	display: inline-block;
+	-webkit-box-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+	font-size: 8rem;
+	font-weight: bold;
+	text-align: center;
+	cursor: pointer;
+	font-family: 'Shadows Into Light',
+		cursive;
+}
+
+.container .tic-tak-toe-container .tic-tak-toe ul li .border {
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+.container .tic-tak-toe-container .tic-tak-toe ul hr {
+	margin: 3px;
+	border: none;
+	background-color: transparent;
+}
+
+.overlay {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.6);
+
+	/* display: flex; */
+	display: none;
+	justify-content: center;
+	align-items: center;
+}
+
+.overlay.show {
+	display: flex;
+}
+
+.overlay .winner {
+	padding: 20px;
+	background-color: #fff;
+	color: #000;
+	text-align: center;
+}
+
+.overlay .winner h2 {
+	font-size: 50px;
+	letter-spacing: 2px;
+}
+
+.overlay .winner button {
+	background-color: #000;
+	margin-top: 20px;
+	font-size: 14px;
+	color: #fff;
+	border-radius: 5px;
+	padding: 10px 20px;
+	cursor: pointer;
+}
